@@ -1,0 +1,113 @@
+L414+Administrator@l414 MINGW64 /
+$ cd D:
+
+L414+Administrator@l414 MINGW64 /d
+$ cd devops
+
+L414+Administrator@l414 MINGW64 /d/devops
+$ git init vasu
+Initialized empty Git repository in D:/devops/vasu/.git/
+
+L414+Administrator@l414 MINGW64 /d/devops
+$ cd vasu
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu (master)
+$ git config --global user.name "vasundharajonnalagadda"
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu (master)
+$ git config --global user.email "jonnalagaddav95@gmail.com"
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu (master)
+$ git clone "https://github.com/vasundharajonnalagadda/examplevasu"
+Cloning into 'examplevasu'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 22 (delta 4), reused 3 (delta 1), pack-reused 0
+Receiving objects: 100% (22/22), 6.16 KiB | 1.54 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu (master)
+$ cd examplevasu
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git add vasu.txt
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git push origin
+info: please complete authentication in your browser...
+Everything up-to-date
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git commit -m "initial commit"
+[main 37813a6] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 vasu.txt
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git branch it443
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git checkout it443
+Switched to branch 'it443'
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (it443)
+$ echo "devops" > file1
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (it443)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git merge it443
+Already up to date.
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git add .
+warning: in the working copy of 'file1', LF will be replaced by CRLF the next time Git touches it
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vasundharajonnalagadda/examplevasu
+   8810ced..37813a6  main -> main
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git log -3
+commit 37813a6ff0d2393250dfe6dabc46c4c1436b1f61 (HEAD -> main, origin/main, origin/HEAD, it443)
+Author: vasundharajonnalagadda <jonnalagaddav95@gmail.com>
+Date:   Fri Dec 8 09:44:21 2023 +0530
+
+    initial commit
+
+commit 8810ced309ab70490729e384fbbb6530596a7a47
+Author: vasundharajonnalagadda <135042600+vasundharajonnalagadda@users.noreply.github.com>
+Date:   Fri Dec 8 09:37:10 2023 +0530
+
+    Update index.html
+
+    updated index.html
+
+commit 2057b844c8cc60a56584e896af085aa1f8e73857 (origin/branch1)
+Author: vasundharajonnalagadda <jonnalagaddav95@gmail.com>
+Date:   Fri Sep 1 09:48:52 2023 +0530
+
+    changed details
+
+    changed details
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$ git pull "https://github.com/vasundharajonnalagadda/examplevasu"
+From https://github.com/vasundharajonnalagadda/examplevasu
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+L414+Administrator@l414 MINGW64 /d/devops/vasu/examplevasu (main)
+$
